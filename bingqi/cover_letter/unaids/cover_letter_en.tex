@@ -1,0 +1,93 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 1.0 (1/6/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Matthew J. Miller
+% http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+
+\usepackage{charter} % Use the Charter font for the document text
+
+\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{1.0in}
+\includegraphics[width=1.0\linewidth]{logo.png}}} % Company/institution logo at the top left of the page
+\makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+
+\newlfmP{sigsize=0pt} % Slightly decrease the height of the signature field
+\newlfmP{addrfromphone} % Print a phone number under the sender's address
+\newlfmP{addrfromemail} % Print an email address under the sender's address
+\PhrPhone{Phone} % Customize the "Telephone" text
+\PhrEmail{Email} % Customize the "E-mail" text
+
+\lthUiuc % Print the company/institution logo
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\namefrom{Bingqi LYU} % Name
+
+\addrfrom{
+November 24, 2014\\[12pt] % Date
+Xueyuan Rd. No.38\\ % Address
+Haidian District\\
+Beijing, China 100191
+}
+
+\phonefrom{+86-18601264142} % Phone number
+
+\emailfrom{lvbingqi@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING/CLOSING
+%----------------------------------------------------------------------------------------
+
+\greetto{Dear Sir or Madam,} % Greeting text
+\closeline{Sincerely yours,} % Closing text
+
+%\nameto{Mrs. Jane Smith} % Addressee of the letter above the to address
+
+%\addrto{
+%Recruitment Officer \\ % To address
+%The Corporation \\
+%123 Pleasant Lane \\
+%City, State 12345
+%}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{newlfm}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+\begin{spacing}{1.5}
+I am a graduate student from Peking University Health Science Center, School of Public Health. I'd like to apply for this intern position of China-African Health Collaboration.
+
+I am so intensely interested in HIV prevention work, and am taking part in some relevant research programs.  During my internship in Ministry of Education, I wrote a review about  VCT detection condition of foreign universities, which provided them a basis for policy making. In addition, in my graduate project, I studied the attitudes of college students for involving HIV test in entry health examination, and its analysis result can be used for supplementing and perfecting the health examination policy for college students.
+
+The study, research and practice during the graduate school makes me qualified for this job. For studying, I have learnt the basic knowledge of preventive medicine, and I can use statistical analysis software SPSS to do relevant analysis work. For researching, I published a paper on core periodical, and involved in some relevant translating and writing works, and the ability of paper writing was systematicly trained. Further, I am capable of designing graduate project independently, which includes questionnaire compiling, investigation organizing and result analyzing. For practicing, I worked at Ministry of Education and Centre for Disease Control and Prevention as an intern, and got endorsed by the mentors. Also, I have good computer skills in office softwares.
+
+I am looking forward to hearing from you in the near future.
+\end{spacing}
+
+%----------------------------------------------------------------------------------------
+
+\end{newlfm}
+\end{document}

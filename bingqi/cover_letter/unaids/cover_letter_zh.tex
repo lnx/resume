@@ -1,0 +1,103 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 1.0 (1/6/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Matthew J. Miller
+% http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+
+%\usepackage{charter} % Use the Charter font for the document text
+\usepackage[utf8]{inputenc}
+\usepackage{CJKutf8}
+
+\setlength{\parindent}{2em}
+
+\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{1.0in}
+\includegraphics[width=1.0\linewidth]{logo.png}}} % Company/institution logo at the top left of the page
+\makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+
+\newlfmP{sigsize=0pt} % Slightly decrease the height of the signature field
+\newlfmP{sigright} % sig right
+\newlfmP{addrfromphone} % Print a phone number under the sender's address
+\newlfmP{addrfromemail} % Print an email address under the sender's address
+\PhrPhone{Phone} % Customize the "Telephone" text
+\PhrEmail{Email} % Customize the "E-mail" text
+
+\lthUiuc % Print the company/institution logo
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\namefrom{吕 冰琪~~~~~~~~~~~~~~~} % Name
+
+\addrfrom{
+2014年11月24日\\[12pt] % Date
+北京大学医学部, 100191\\
+北京市海淀区学院路38号 % Address
+}
+
+\phonefrom{+86-18601264142} % Phone number
+
+\emailfrom{lvbingqi@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING/CLOSING
+%----------------------------------------------------------------------------------------
+
+\greetto{尊敬的老师：} % Greeting text
+%\closeline{此致敬礼！} % Closing text
+
+%\nameto{Mrs. Jane Smith} % Addressee of the letter above the to address
+
+%\addrto{
+%Recruitment Officer \\ % To address
+%The Corporation \\
+%123 Pleasant Lane \\
+%City, State 12345
+%}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\begin{newlfm}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+\begin{spacing}{1.5}
+您好！我是北京大学医学部公共卫生学院的在读研究生，想申请贵处中非合作实习生的职位。
+
+我对艾滋病预防工作有着浓厚的兴趣，曾参与过一些相关的研究项目。在教育部实习期间，写过一篇国外大学VCT检测情况的综述，为其政策制定提供依据。此外，我的研究生课题调查了大学生对入学体检中加入HIV检测的态度及看法，分析结果可用于大学生健康体检政策的补充与完善。
+
+研究生期间的学习、科研及实践使我有能力胜任这份工作。学习方面，学习了预防医学的基本知识，能利用SPSS等统计软件进行相关的统计分析。科研方面，发表一篇核心期刊并参与相关著作的翻译编写，有良好的论文报告撰写能力。能独立完成课题设计，包括：问卷编制、现场组织和结果分析。实践方面，曾在教育部和疾病预防控制中心进行过实习，并得到带教老师们的肯定。能熟练的使用各类办公软件。
+
+希望能得到这次实习机会。
+
+\begin{flushleft}此致\end{flushleft}
+
+敬礼！
+\end{spacing}
+
+%----------------------------------------------------------------------------------------
+
+\end{newlfm}
+\clearpage\end{CJK}
+\end{document}
