@@ -1,0 +1,122 @@
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv 主题
+\moderncvstyle{classic}                        % 选项参数是 ‘casual', ‘classic', ‘oldstyle' 和 'banking'
+\moderncvcolor{blue}                          % 选项参数是 ‘blue' (默认)、‘orange'、‘green'、‘red'、‘purple' 和 ‘grey'
+%\nopagenumbers{}                             % 消除注释以取消自动页码生成功能
+
+% 字符编码
+\usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
+\usepackage{CJKutf8}
+
+% 调整页面出血
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
+
+% 个人信息
+\name{Long}{Zhao}
+\title{Beihang University}                     % 可选项、如不需要可删除本行
+% \address{No.38 Xueyuan Rd., Haidian District}{Beijing, China, 100191}            % 可选项、如不需要可删除本行
+\phone[mobile]{+86-18601264124}              % 可选项、如不需要可删除本行
+% \phone[fixed]{+2~(345)~678~901}               % 可选项、如不需要可删除本行
+% \phone[fax]{+3~(456)~789~012}                 % 可选项、如不需要可删除本行
+\email{buaastorm@gmail.com}                    % 可选项、如不需要可删除本行
+% \homepage{blog.codinghonor.com}                  % 可选项、如不需要可删除本行
+% \extrainfo{附加信息 (可选项)}                 % 可选项、如不需要可删除本行
+% \photo[64pt][0.4pt]{photo}                  % ‘64pt'是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、'picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+% \quote{引言(可选项)}                          % 可选项、如不需要可删除本行
+
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}                       % 详情参阅CJK文件包
+\maketitle
+
+\section{Personal Information}
+\cvitem{Major}{Computer Science}
+\cvitem{Mentor}{\textbf{Prof.} Shilong Ma}
+
+\section{Education}
+\cventry{2010 -- 2013}{Master}{Beihang University}{School of Computer Science}{}{Major: Mathematical Statistics, Mathematical Logic, Pattern Recognition, Uncertainty Artificial Intelligence.}  % arguments 3 to 6 are optional
+\cventry{2006 -- 2010}{Bachelor}{Beihang University}{School of Computer Science}{}{Major: Discrete Mathematics, Algorithm, Operating System, Compilers Principles, Networks.}  % arguments 3 to 6 are optional
+
+
+\section{Graduation Project}
+\cvitem{Title}{\textbf{A Survey of the Collaborative Observation Techniques in Distributed Sensor Networks}}
+\cvitem{Brief}{\small Designed a dynamic and decentralized sensor network. Proposed a half-sleep scheduling mechanism. Implemented the co-observation execution process.}
+
+\section{Work Experience}
+\cventry{2013 -- 2014}{IBM}{CSTL Web Integration}{}{}{The major developer of the WebAdmin project, a web based management tool for application servers of IBM.\newline{}%
+Work Contents:%
+\begin{itemize}%
+\item Design and develop new features
+\item Solve CPS from clients
+\end{itemize}}
+
+\section{Internship Experience}
+\cventry{2012 -- 2012}{Morgan Stanley}{Financial Derivatives}{}{}{Developed a monitoring system for the financial derivatives trading system, mainly based on its running log. There are two steps here: 1. data extracting from the running log; 2. monitoring visualization (Graphiti).\newline{}}
+\cventry{2011 -- 2011}{Yahoo}{Advertisement}{}{}{Developed an automatic deployment toolkit for behavior targeting team's preliminary deployment, which connects a four step pipe line operation on a hadoop cluster. If something goes wrong during deploying, it will notify the developer with an email.\newline{}}
+
+\section{Indie Developer}
+\cvitem{2008 -- 2015}{Another identity of me is an independent developer. These days I am working on a project called vox. Welcome to visit my GitHub for more info.}
+\cvitem{}{\url{https://github.com/lnx}}
+
+\section{Language Skills}
+\cvitem{Coding}{Java, Python}{}
+\cvitem{English}{TOEFL(94), GRE(310+3.0)}{}
+
+\section{Awards}
+\cvitem{}{Second prize of fellowship of Beihang University}{}
+
+\section{Hobbies and interests}
+\cvitem{}{Reading, travelling.}{}
+
+% \section{其他 1}
+% \cvlistitem{项目 1}
+% \cvlistitem{项目 2}
+% \cvlistitem{项目 3}
+
+\renewcommand{\listitemsymbol}{-}             % 改变列表符号
+
+% \section{其他 2}
+% \cvlistdoubleitem{项目 1}{项目 4}
+% \cvlistdoubleitem{项目 2}{项目 5\cite{book1}}
+% \cvlistdoubleitem{项目 3}{}
+
+% 来自BibTeX文件但不使用multibib包的出版物
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+
+% 来自BibTeX文件并使用multibib包的出版物
+%\section{出版物}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+
+\clearpage\end{CJK}
+\end{document}
+
+
+%% 文件结尾 `template-zh.tex'.
