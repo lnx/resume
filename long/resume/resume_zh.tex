@@ -18,21 +18,20 @@
 \usepackage{CJKutf8}
 
 % 调整页面出血
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.9,top=1.6cm]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
 
 % 个人信息
 \name{赵}{龙}
-\title{北京航空航天大学}                     % 可选项、如不需要可删除本行
-% \address{No.38 Xueyuan Rd., Haidian District}{Beijing, China, 100191}            % 可选项、如不需要可删除本行
-\phone[mobile]{+86-18601264124}              % 可选项、如不需要可删除本行
-% \phone[fixed]{+2~(345)~678~901}               % 可选项、如不需要可删除本行
-% \phone[fax]{+3~(456)~789~012}                 % 可选项、如不需要可删除本行
-\email{buaastorm@gmail.com}                    % 可选项、如不需要可删除本行
-% \homepage{blog.codinghonor.com}                  % 可选项、如不需要可删除本行
-% \extrainfo{附加信息 (可选项)}                 % 可选项、如不需要可删除本行
-% \photo[64pt][0.4pt]{photo}                  % ‘64pt'是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、'picture‘ 是图片文件的名字;可选项、如不需要可删除本行
-% \quote{引言(可选项)}                          % 可选项、如不需要可删除本行
+\title{北京航空航天大学}
+% \address{No.38 Xueyuan Rd., Haidian District}{Beijing, China, 100191}
+\phone[mobile]{+86-18601264124}
+\email{buaastorm@gmail.com}
+% \homepage{blog.codinghonor.com}
+\social[github][github.com/lnx]{https://www.github.com/lnx}
+% \extrainfo{\githubsocialsymbol \httplink{https://www.github.com/lnx}}
+% \photo[64pt][0.01pt]{photo}
+% \quote{引言(可选项)}
 
 % 显示索引号;仅用于在简历中使用了引言
 %\makeatletter
@@ -49,44 +48,71 @@
 \begin{CJK}{UTF8}{gbsn}                       % 详情参阅CJK文件包
 \maketitle
 
-\section{个人信息}
-\cvitem{专业}{计算机科学与技术}
-\cvitem{导师}{马世龙 \textbf{教授}}
+\vspace*{-1.05cm}
 
 \section{教育背景}
-\cventry{2010 -- 2013}{硕士}{北京航空航天大学}{计算机学院}{}{主修：数理统计、数理逻辑、模式识别、人工智能}  % arguments 3 to 6 are optional
-\cventry{2006 -- 2010}{学士}{北京航空航天大学}{计算机学院}{}{主修：离散数学、算法、操作系统、编译原理、网络}  % arguments 3 to 6 are optional
-
-
-\section{研究生课题}
-\cvitem{题目}{\textbf{分布式传感器网络中的协同观测技术研究}}
-\cvitem{简介}{\small 设计了一个动态、去中心化的传感器网络；提出了一套“半睡眠”调度机制；实现了协同观测执行流程。}
+\cventry{2010 -- 2013}{北京航空航天大学}{\small 硕士}{\small \emph{计算机科学与技术}}{\small \emph GPA: 3.4}{主修: 数理统计, 数理逻辑, 模式识别, 不确定性人工智能.}  % arguments 3 to 6 are optional
+\cventry{2006 -- 2010}{北京航空航天大学}{\small 学士}{\small \emph{计算机科学与技术}}{\small \emph GPA: 3.6}{主修: 离散数学, 算法, 操作系统, 编译原理, 网络.}  % arguments 3 to 6 are optional
 
 \section{工作经历}
-\cventry{2013 -- 2014}{IBM}{CSTL Web Integration}{}{}{一个基于web的管理IBM应用服务器的管理工具WebAdmin项目的主要负责人。\newline{}%
-工作内容:%
+\cventry{2013 -- 2014}{IBM}{\small CSTL Web集成组}{}{}{}
+
+\cventry{}{\small WebAdmin}{\small \emph{基于web的配置管理i系统上应用服务器的软件}}{}{}{
 \begin{itemize}%
-\item 设计并开发新功能
-\item 解决客户CPS
+\item 实现了用于支持Apache2.2到2.4升级的新功能.
+\item 设计了一个模板引擎作为原有视图层的补充, 避免了开发中部分的重复性劳动.
+\item 参考代码大全中的建议, 重构了部分项目遗留代码, 相关代码精简了约20\%.
+\item 与同事合作解决来自客户的CPS.
+\end{itemize}}
+
+\cventry{}{\small CodeSync}{\small \emph{为CMVC开发的代码自动提交工具}}{}{}{
+\begin{itemize}%
+\item 分析metadata目录中的所有文件, 检测被监控的代码源文件的当前状态.
+\item 利用一个纯JavaScript框架Node-Webkit实现了用户界面.
+\item 把该工具分享给同组组员使用, 在代码提交上节省了大家约一半的时间.
 \end{itemize}}
 
 \section{实习经历}
-\cventry{2012 -- 2012}{摩根士丹利}{金融衍生品}{}{}{基于金融衍生品交易系统的运行日志，开发了一个监测系统。主要分为两步：1.从运行日志中分析并抽取数据；2.监测数据可视化(Graphiti)。\newline{}}
-\cventry{2011 -- 2011}{雅虎}{广告}{}{}{为行为定位组产品预部署开发了一套部署工具，工具将Hadoop集群上的四步的管道操作连接在一起实现了自动部署。如果部署中出现问题，工具会向开发人员发送邮件进行提醒。\newline{}}
 
-\section{独立开发者}
-\cvitem{2008 -- 2015}{平时会独自开发一些感兴趣的项目。最近在忙一个叫vox的项目。感兴趣的话欢迎移步我的GitHub。}
-\cvitem{}{\url{https://github.com/lnx}}
+\cventry{2012 -- 2012}{摩根士丹利}{\small 金融衍生品组}{}{}{}
 
-\section{语言技能}
-\cvitem{编程}{Java, Python}{}
-\cvitem{英语}{TOEFL(94), GRE(310+3.0)}{}
+\cventry{}{\small 交易系统监控}{\small \emph{一个监控金融衍生品交易系统的软件系统}}{}{}{
+\begin{itemize}%
+\item 实现了一个分析系统运行日志的语法分析器, 用于检测系统当前的运行状态.
+\item 设计了一个精简数据库, 支持查询和插入操作，并能在记录文件过大时进行自动拆分.
+\item 利用Graphiti对监控数据进行可视化，实时且可通过web访问.
+\item 在该项目上与项目成员实践敏捷软件开发(scrum)的模式.
+\item 学会了如何正确的使用咖啡机.
+\end{itemize}}
 
-\section{奖励}
-\cvitem{}{北航之友奖学金}{}
+\cventry{2011 -- 2011}{创新工场}{\small 飞波组}{}{}{}
 
-\section{兴趣}
-\cvitem{}{读书、旅行}{}
+\cventry{}{\small 飞波}{\small \emph{一款微信类似的聊天产品}}{}{}{
+\begin{itemize}%
+\item 完成了部分服务端API的实现, 并通过Flask将其发布为一系列RESTful的服务.
+\item 基于节点相似性设计了好友推荐模块.
+\end{itemize}}
+
+\section{项目经验}
+
+\cventry{2014 -- 2015}{坐鱼}{\small http://www.sitfish.com}{}{}{一个情侣间的音乐共享网站. 即便两人在不同的地方, 依然可以通过坐鱼(SitFish)来同时同听一首歌, 两人互为对方的主播. 旨在让音乐共享变得简单且令人愉悦.}
+\cvitem{}{\small \emph{相关技术: Python, JavaScript, Flask, MongoDB, WebSocket.}}
+
+\cventry{2010 -- 2015}{其它}{}{}{}{
+\begin{itemize}%
+\item PyWin: Windows上的Python版本管理工具，自动寻找系统已安装的Python版本，帮助用户一键切换.
+\item StockData: 从网上抓取机构持股, 基金重仓, 社保重仓及QFII重仓的持股数据并入库为后续分析做准备.
+\end{itemize}}
+
+%\section{Thesis}
+%\cvitem{Title}{\textbf{A Survey of the Collaborative Observation Techniques in Distributed Sensor Networks}}
+%\cvitem{Brief}{\small Designed a dynamic and decentralized sensor network. Proposed a half-sleep scheduling mechanism. Implemented the co-observation %execution process.}
+
+\section{补充说明}
+\cventry{}{\small 技能}{\small Java, Python, JavaScript, Flask, SQL(MySQL), NoSQL(MongoDB)}{}{}{}
+\cventry{}{\small 语言}{\small TOEFL(94), GRE(313+3.0)}{}{}{}
+\cventry{}{\small 奖励}{\small 北航之友奖学金}{}{}{}
+\cventry{}{\small 自评}{\small 合作, 自律, 敏而学.}{}{}{}
 
 % \section{其他 1}
 % \cvlistitem{项目 1}

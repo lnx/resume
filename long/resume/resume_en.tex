@@ -18,21 +18,20 @@
 \usepackage{CJKutf8}
 
 % 调整页面出血
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.9,top=1.6cm]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
 
 % 个人信息
 \name{Long}{Zhao}
-\title{Beihang University}                     % 可选项、如不需要可删除本行
-% \address{No.38 Xueyuan Rd., Haidian District}{Beijing, China, 100191}            % 可选项、如不需要可删除本行
-\phone[mobile]{+86-18601264124}              % 可选项、如不需要可删除本行
-% \phone[fixed]{+2~(345)~678~901}               % 可选项、如不需要可删除本行
-% \phone[fax]{+3~(456)~789~012}                 % 可选项、如不需要可删除本行
-\email{buaastorm@gmail.com}                    % 可选项、如不需要可删除本行
-% \homepage{blog.codinghonor.com}                  % 可选项、如不需要可删除本行
-% \extrainfo{附加信息 (可选项)}                 % 可选项、如不需要可删除本行
-% \photo[64pt][0.4pt]{photo}                  % ‘64pt'是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、'picture‘ 是图片文件的名字;可选项、如不需要可删除本行
-% \quote{引言(可选项)}                          % 可选项、如不需要可删除本行
+\title{Beihang University}
+% \address{No.38 Xueyuan Rd., Haidian District}{Beijing, China, 100191}
+\phone[mobile]{+86-18601264124}
+\email{buaastorm@gmail.com}
+% \homepage{blog.codinghonor.com}
+\social[github][github.com/lnx]{https://www.github.com/lnx}
+% \extrainfo{\githubsocialsymbol \httplink{https://www.github.com/lnx}}
+% \photo[64pt][0.01pt]{photo}
+% \quote{引言(可选项)}
 
 % 显示索引号;仅用于在简历中使用了引言
 %\makeatletter
@@ -49,44 +48,71 @@
 \begin{CJK}{UTF8}{gbsn}                       % 详情参阅CJK文件包
 \maketitle
 
-\section{Personal Information}
-\cvitem{Major}{Computer Science}
-\cvitem{Mentor}{\textbf{Prof.} Shilong Ma}
+\vspace*{-0.7cm}
 
 \section{Education}
-\cventry{2010 -- 2013}{Master}{Beihang University}{School of Computer Science}{}{Major: Mathematical Statistics, Mathematical Logic, Pattern Recognition, Uncertainty Artificial Intelligence.}  % arguments 3 to 6 are optional
-\cventry{2006 -- 2010}{Bachelor}{Beihang University}{School of Computer Science}{}{Major: Discrete Mathematics, Algorithm, Operating System, Compilers Principles, Networks.}  % arguments 3 to 6 are optional
+\cventry{2010 -- 2013}{Beihang University}{\small Master}{\small \emph Computer Science}{\small \emph GPA: 3.4}{Major: Mathematical Statistics, Mathematical Logic, Pattern Recognition, Uncertainty AI.}  % arguments 3 to 6 are optional
+\cventry{2006 -- 2010}{Beihang University}{\small Bachelor}{\small \emph Computer Science}{\small \emph GPA: 3.6}{Major: Discrete Mathematics, Algorithm, Operating System, Compilers Principles, Networks.}  % arguments 3 to 6 are optional
 
+\section{Employment}
+\cventry{2013 -- 2014}{IBM}{\small CSTL Web Integration Team}{}{}{}
 
-\section{Graduation Project}
-\cvitem{Title}{\textbf{A Survey of the Collaborative Observation Techniques in Distributed Sensor Networks}}
-\cvitem{Brief}{\small Designed a dynamic and decentralized sensor network. Proposed a half-sleep scheduling mechanism. Implemented the co-observation execution process.}
-
-\section{Work Experience}
-\cventry{2013 -- 2014}{IBM}{CSTL Web Integration}{}{}{The major developer of the WebAdmin project, a web based management tool for application servers of IBM.\newline{}%
-Work Contents:%
+\cventry{}{\small WebAdmin}{\small \emph{a web based configuration and management software on system i for application servers}}{}{}{
 \begin{itemize}%
-\item Design and develop new features
-\item Solve CPS from clients
+\item Implemented the new features for supporting Apache server upgrading from 2.2 to 2.4.
+\item Designed a template engine as a supplement for the original view layer; avoided some of the repetitive work.
+\item Refactored part of the legacy code according to Code Complete; reduced 20\% of the code.
+\item Collaborated with colleagues to solve CPS from our clients.
 \end{itemize}}
 
-\section{Internship Experience}
-\cventry{2012 -- 2012}{Morgan Stanley}{Financial Derivatives}{}{}{Developed a monitoring system for the financial derivatives trading system, mainly based on its running log. There are two steps here: 1. data extracting from the running log; 2. monitoring visualization (Graphiti).\newline{}}
-\cventry{2011 -- 2011}{Yahoo}{Advertisement}{}{}{Developed an automatic deployment toolkit for behavior targeting team's preliminary deployment, which connects a four step pipe line operation on a hadoop cluster. If something goes wrong during deploying, it will notify the developer with an email.\newline{}}
+\cventry{}{\small CodeSync}{\small \emph{an automatic code submission tool for CMVC}}{}{}{
+\begin{itemize}%
+\item Analyzed all the files in directory metadata to detect the stauts of each monitored code file.
+\item Implemented a user interface by using a pure JavaScript framework Node-Webkit.
+\item Shared this tool to group members; saved nearly half of their time on code submission.
+\end{itemize}}
 
-\section{Indie Developer}
-\cvitem{2008 -- 2015}{Independent developer is another identity of me. These days I am working on a project called vox. Welcome to visit my GitHub for more info.}
-\cvitem{}{\url{https://github.com/lnx}}
+\section{Internship}
 
-\section{Language Skills}
-\cvitem{Coding}{Java, Python}{}
-\cvitem{English}{TOEFL(94), GRE(310+3.0)}{}
+\cventry{2012 -- 2012}{Morgan Stanley}{\small Financial Derivatives Team}{}{}{}
 
-\section{Awards}
-\cvitem{}{Second prize of fellowship of Beihang University}{}
+\cventry{}{\small TradingMonitor}{\small \emph{a monitoring system for the financial derivatives trading system}}{}{}{
+\begin{itemize}%
+\item Created a syntactic analyzer to analyze system running log; be used to detect the system status.
+\item Designed a minimal database; supported select, insert operation and file split.
+\item Visualized the monitor data by using Graphiti, which was real-time and could be visited through web.
+\item Practiced scrum with team members on this project.
+\item Learned how to make amazing coffee.
+\end{itemize}}
 
-\section{Hobbies}
-\cvitem{}{Reading, travelling.}{}
+\cventry{2011 -- 2011}{Innovation Works}{\small Feibo Team}{}{}{}
+
+\cventry{}{\small Feibo}{\small \emph{yet another WeChat}}{}{}{
+\begin{itemize}%
+\item Implemented part of the service API; released as a series of RESTful services by using Flask.
+\item Designed friends recommendation module based on node similarities.
+\end{itemize}}
+
+\section{Projects}
+
+\cventry{2014 -- 2015}{SitFish}{\small http://www.sitfish.com}{}{}{A site to connect lovers with music. Even they are at different places, they could still listen to the same music at the same time. If your lover switched the song, your player will automatically switched to the new song almost simultaneously and vice versa. Music share will never be such an easy and joyful thing.}
+\cvitem{}{\small \emph{Techniques: Python, JavaScript, Flask, MongoDB, WebSocket.}}
+
+\cventry{2010 -- 2015}{Others}{}{}{}{
+\begin{itemize}%
+\item PyWin: a Python version management tool on Windows, automatically find and help user to switch.
+\item StockData: a top holdings stock data collector.
+\end{itemize}}
+
+%\section{Thesis}
+%\cvitem{Title}{\textbf{A Survey of the Collaborative Observation Techniques in Distributed Sensor Networks}}
+%\cvitem{Brief}{\small Designed a dynamic and decentralized sensor network. Proposed a half-sleep scheduling mechanism. Implemented the co-observation %execution process.}
+
+\section{Additional}
+\cventry{}{\small Skills}{\small Java, Python, JavaScript, Flask, SQL(MySQL), NoSQL(MongoDB)}{}{}{}
+\cventry{}{\small Awards}{\small Second prize of fellowship of Beihang University}{}{}{}
+\cventry{}{\small Language}{\small TOEFL(94), GRE(313+3.0)}{}{}{}
+\cventry{}{\small Self-Evaluation}{\small Collaborative, self-drive and fast learning.}{}{}{}
 
 % \section{其他 1}
 % \cvlistitem{项目 1}
